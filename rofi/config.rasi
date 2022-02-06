@@ -1,0 +1,94 @@
+configuration {
+    display-drun: "Applications:";
+    display-window: "Windows:";
+    drun-display-format: "{icon} {name}";
+    modi: "window,run,drun";
+    show-icons: false;
+    icon-theme: "Papirus";
+    font: "Iosevka Custom 12";
+
+}
+
+@theme "~/.config/rofi/theme.rasi"
+
+window {
+	width: 20%;
+    height: 50%;
+	border: 2px;
+	border-color: @bg;
+	border-radius: 5;
+    location: north east;
+    margin: 50px 5px;
+}
+
+element {
+	padding: 0;
+	text-color: @fg-alt;
+	border-radius: 5px;
+}
+
+element selected.normal {
+    background-color: 				@fg;
+    text-color:       				@bg;
+}
+
+element selected {
+	text-color: @fg;
+}
+
+element-text {
+	background-color: inherit;
+	text-color: inherit;
+	vertical-align: 0;
+    padding: 12 12 12 12;
+}
+
+element-icon {
+	size: 0;
+}
+
+entry {
+	background-color: @bg;
+	padding: 12;
+	text-color: @fg;
+        border-radius: 0px;
+}
+
+case-indicator {
+    spacing: 0;
+    text-color: @fg;
+}
+
+inputbar {
+	children: [prompt, entry, case-indicator];
+}
+
+scrollbar {
+	background-color: #15151b;
+	handle-width: 8px;
+	handle-color: @fg;
+}
+
+listview {
+	padding: 8 12;
+	background-color: @bg;
+	columns: 1;
+	lines: 8;
+	scrollbar: false;
+}
+
+mainbox {
+  background-color: @bg;
+  children: [inputbar, listview];
+  padding: 6;
+  border: 0px;
+  border-color: @fg;
+}
+
+prompt {
+  background-color: @prbg;
+  enabled: true;
+  padding: 12 12 0 12;
+  text-color: @fg;
+  border-radius: 10px;
+}

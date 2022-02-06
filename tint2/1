@@ -1,0 +1,160 @@
+# ackground Bar 
+rounded = 0
+border_width = 0
+border_sides = TBLR
+background_color = #2A2C36 100
+
+# Background inactive tasks 
+rounded = 8
+border_width = 0
+border_sides = TBLR 
+background_color = #3D3F60 100
+
+# Background task 
+rounded = 8
+border_width = 0
+border_sides = TBLR
+background_color = #A7A8C7 100 
+
+# Background Taskbar 
+rounded = 10 
+border_width = 0
+border_sides = TBLR 
+background_color = #323843 100
+
+# Background powermenu 
+rounded = 10 
+border_width = 0 
+border_sides = TBLR 
+background_color = #E5A9A9 100
+
+# Background Tooltip
+rounded = 0 
+border_width = 0 
+border_sides = TBLR 
+background_color = #2E353B 100
+
+# Panel
+panel_items = PPPPT:C
+panel_size = 100% 60
+panel_margin = 0 0
+panel_padding = 20 5 12 
+panel_background_id = 1
+panel_position = bottom left vertical
+panel_monitor = all
+scale_relative_to_dpi = 0
+scale_relative_to_screen_height = 0
+panel_shrink = 0 
+panel_dock = 0
+panel_pivot_struts = 1 
+panel_layer = bottom
+strut_policy = none
+disable_transparency = 1 
+
+panel_window_name = bar 
+
+# Clock 
+time1_format = %H 
+time1_font = IosevkaCustom 18
+time2_format = %M 
+time2_font = IosevkaCustom 17
+clock_font_color = #989BAD 100 
+clock_padding = 0 0
+clock_background_id = 1 
+
+# Button Powermenu
+button = new 
+button_text = ⏻
+button_tooltip = Powermenu
+button_font = IosevkaNerdFont 20
+button_font_color = #191F2A 100
+button_padding = 5 10
+button_centered = 1
+button_background_id = 5
+button_lclick_command = bash ~/.config/tint2/powermenu.sh
+
+# Button Rofi
+button = new
+button_text = 
+button_tooltip = Rofi Launcher
+button_font = IosevkaNerdFont 18
+button_font_color = #B8BDCC 100
+button_centered = 1 
+button_padding = 0 1
+button_background_id = 1 
+button_lclick_command = rofi -show drun &
+
+# Button Terminal
+button = new 
+button_text = 
+button_tooltip = Terminal
+button_font = IosevkaNerdFont 20
+button_font_color = #7B899C 100 
+button_centered = 1 
+button_padding = 0 1 
+button_background_id = 1 
+button_lclick_command = kitty &
+
+# Button Firefox 
+button = new 
+button_text = 
+button_tooltip = Firefox 
+button_font = IosevkaNerdFont 16 
+button_font_color = #9D785E 100 
+button_centered = 1 
+button_padding = 0 1 
+button_background_id = 1 
+button_lclick_command = firefox &
+
+# Executor Wifi 
+
+
+# Taskbar
+taskbar_mode = single_desktop
+taskbar_hide_if_empty = 1 
+taskbar_padding = 0 16 14 
+taskbar_distribute_size = 1
+taskbar_hide_inactive_tasks = 0
+taskbar_hide_different_monitor = 0
+taskbar_hide_different_desktop = 1 
+taskbar_always_show_all_desktop_tasks = 0
+taskbar_sort_order = none
+task_align = center
+taskbar_background_id = 4
+taskbar_name = 0
+
+# Tasks
+task_icon = 0
+task_text = 1 
+task_centered = 1 
+task_tooltip = 1 
+task_padding = 0 0 0
+task_maximum_size = 16 16
+task_font = IosevkaNerdFont 0
+task_font_color = #ffffff 100 
+task_background_id = 2
+task_active_background_id = 3
+
+
+# Separator space 
+#separator = new 
+#separator_background_id = 1 
+#separator_style = space 
+#separator_size = 100 
+#separator_padding = 0 0 
+
+# Separator line
+separator = new 
+separator_background_id = 1 
+separator_color = #90A5B5 100 
+separator_style = line
+separator_size = 2 
+separator_padding = 0 0
+
+# Tooltip 
+tooltip_padding = 4 8
+tooltip_show_timeout = 0.5
+tooltip_hide_timeout = 0.15
+tooltip_background_id = 6
+tooltip_font_color = #CCE1E6 100 
+tooltip_font = IosevkaCustom 10
