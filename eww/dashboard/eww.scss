@@ -1,0 +1,230 @@
+* {
+    all: unset;
+}
+
+.bg {
+    border-radius: 0px 18px 18px 0px;
+    background-color: #00030a;
+    margin: 0;
+}
+
+tooltip {
+    font-family: CartographCF;
+}
+
+.timetext {
+    margin-top: 0px;
+    font-family: CartographCF;
+    font-size: 42px;
+    color: #D1E4EF;
+}
+
+.datetext {
+    margin: 0px 0px 0px 0px;
+    font-family: CartographCF;
+    font-size: 20px;
+    color: #D1E4EF;
+}
+
+//--------------------
+
+._profile {
+	border-radius: 10px 10px 50px 10px;
+    background-color: #171C24;
+}
+
+._pfp {
+    background-image: url("/home/n3ko/Pictures/animeg-2.jpg");
+    background-size: 200px;
+    background-position: 30% 0%;
+    background-repeat: no-repeat;
+    min-height: 150px;
+    min-width: 150px; 
+    margin: 20px 0 0 0px;
+    border-radius: 10px;
+}
+
+.name {
+    padding: 20px;
+    font-family: "CartographCF";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+
+//--------------------
+
+.volume {
+    background-color: #171C24;
+    border-radius: 10px 10px 10px 50px;
+    margin: 0px 0px 0px 0px;
+    padding: 15px 15px 0px 15px;
+}
+
+.volicon {
+    color: #F694C1;
+    font-size: 26px;
+    padding: 0px 0px 0px 0px;
+}
+
+.micicon {
+    color: #EDE7B1;
+    font-size: 26px;
+    padding: 0px 0px 0px 0px;
+}
+
+scale trough {
+    all: unset;
+    background-color: #545775;
+    min-width: 15px;
+    min-height: 300px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.volslide trough highlight {
+    border-radius: 10px;
+    background-color: #E4C1F9;
+}
+
+.micslide trough highlight {
+    border-radius: 10px;
+    background-color: #A9DEF9;
+}
+
+
+//--------------------
+
+.mpd {
+    border-radius: 10px 50px 10px 10px;
+    background-color: #171C24;
+}
+
+.mpdtitle {
+    margin: 10px 0px 0px 0px;
+    font-family: CartographCF;
+}
+
+.controlmusic {
+    padding: 0px 10px 0px 10px;
+}
+
+.previcon {
+    font-family: "Icomoon";
+    font-size: 44px;
+    color: #83A7EC;
+}
+
+.toggleicon {
+    font-family: "Icomoon";
+    font-size: 44px;
+    color: #83A7EC;
+}
+
+.nexticon {
+    font-family: "Icomoon";
+    font-size: 44px;
+    color: #83A7EC;
+}
+
+.cur_slide trough highlight {
+    background-image: linear-gradient(to bottom right, #8EEDF7, #A1CDF1);
+    border-radius: 10px;
+}
+
+.cur_slide trough {
+    all: unset;
+    border-radius: 10px;
+    min-height: 8px;
+    min-width: 150px;
+    background-color: #545775;
+    margin: 10px 0px 10px 0px;
+}
+
+//--------------------
+
+.power {
+    background-color: #171C24;
+    border-radius: 35px 10px 35px 10px;
+}
+
+.powericon {
+    color: #D1E4EF;
+    font-family: CartographCF;
+    font-size: 32px;
+}
+
+.restarticon {
+    color: #D1E4EF;
+    font-family: CartographCF;
+    font-size: 32px;
+}
+
+.lockicon {
+    color: #D1E4EF;
+    font-family: CartographCF;
+    font-size: 32px;
+}
+
+//--------------------
+
+.system {
+    background-color: #171C24;
+    border-radius: 50px 10px 10px 10px;
+}
+
+.systemcir {
+    margin: 0px;
+}
+
+.diskicon {
+    font-family: CartographCF;
+    font-size: 40px;
+    color: #E8A6A6;
+    margin: 25px;
+}
+
+.ramicon {
+    font-family: CartographCF;
+    font-size: 40px;
+    color: #EDE7B1;
+    margin: 25px;
+}
+
+.diskcir {
+    color: #E8A6A6;
+    border-radius: 10px;
+}
+
+.ramcir {
+    color: #EDE7B1;
+    border-radius: 10px;
+}
+
+//--------------------
+
+.fav {
+    background-color: #171C24;
+    border-radius: 10px 50px 10px 10px;
+}
+
+.app1{
+    font-size: 30px;
+    color: #BEF5F5;
+}
+
+.app2{
+    font-size: 30px;
+    color: #EDE7B1;
+}
+
+.app3{
+    font-size: 30px;
+    color: #EFECD1;
+}
+
+.app4{
+    font-size: 30px;
+    color: #9BEEA6;
+}

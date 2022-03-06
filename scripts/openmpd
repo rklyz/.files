@@ -1,0 +1,12 @@
+#!/bin/bash
+
+TMP=$HOME/.config/tmp/mpdtmp.zyx
+
+if [[ ! -f $TMP ]]; then
+    touch $TMP
+    mpd 
+    mpc update 1> /dev/null
+else
+    rm $TMP
+    killall mpd 
+fi

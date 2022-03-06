@@ -1,0 +1,94 @@
+
+*{
+    all: unset;
+}
+._bar{
+    background-color: #131D15;
+}
+
+._end_bar{
+    margin: 0 0 0 0rem;
+}
+._mid_bar{
+    margin: 0 0 0 0rem;
+}
+
+._controls {
+    background-color: #292F36;
+    border-radius: 20px;
+    margin: .3rem 0 .3rem 0;
+    padding: 0 .3em 0 .3em;
+}
+
+._launcher_icon{
+    //background-color: #292F36;
+    color: #89A3D7;
+    // paddin up right bottom left
+    padding: .0rem .6rem 0rem .6rem;
+    margin: .3rem 0rem .3rem 0rem;
+    font-family: "feather";
+    font-size: 18;
+    border-radius: 8px;
+}
+
+._power{
+    //background-color: #292f36;
+    color: #D64550;
+    padding: 0 .6rem 0 .6rem;
+    margin: .3rem 1rem .3rem 0;
+    font-family: "feather";
+    font-size: 18;
+    border-radius: 8px;
+}
+
+._wifi_icon{
+    color: #AADEE6;
+    padding: .0rem .4rem .2rem .4rem;
+    margin: .3rem 0rem .3rem .0rem;
+    font-family: "Iosevka Custom";
+    font-size: 18;
+    border-radius: 8px;
+}
+
+._time{
+    color: #FEF1EB;
+    padding: 0 .4rem 0 .4rem;
+    margin: .3rem 10rem .3rem 0;
+    font-family: "IosevkaCustom";
+    font-size: 18;
+    font-weight: bold;
+}
+
+._workspaces{
+    border-radius: 8px;
+    background-color: #292F36;
+    padding: 0 .4rem 0 .4rem;
+    margin: .2rem 0em .2rem .5em;
+    color: #E8F2FF;
+    font-family: "Iosevka Custom";
+    font-size: 18;
+    font-weight: bold;
+}
+
+._vol{
+    border-radius: 8px;
+    margin: .3rem 0 .3rem 0;
+    padding: 0 .4rem 0 .4rem;
+    color: #E5AAAA;
+    font-family: "Iosevka Custom";
+    font-size: 18;
+}
+
+scale trough{
+  all: unset;
+  background-color: #070C13;
+  border-radius: 10px;
+  min-height: 8px;
+  min-width: 100px;
+  margin: .3rem 0 .3rem .3rem;
+}
+
+._vol_scale trough highlight{
+    background-color: #DCB6D5;
+    border-radius: 10px;
+}

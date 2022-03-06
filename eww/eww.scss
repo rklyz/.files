@@ -1,0 +1,71 @@
+* {
+    all: unset;
+}
+
+.bar {
+    background-color: #191A1C;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.time {
+    font-family: azukifontBI;
+    color: #D0E2F6;
+    font-size: 23px;
+    margin-left: 0rem;
+}
+
+.workspace {
+    margin: .0rem .0rem;
+    padding: 0rem .8rem;
+    border-radius: 10px;
+}
+
+.curwork {
+    font-family: DaddyTimeMono NF;
+    font-weight: bold;
+    font-size: 20px;
+    color: #9BC4BC;
+}
+
+.volstat {
+    margin-top: .1rem;
+    font-size: 22px;
+    color: #D59292;
+}
+
+.volscale trough {
+    all: unset;
+    min-width: 5rem;
+    min-height: .8rem;
+    background-color: #313645;
+    border-radius: 10px;
+}
+
+.volscale trough highlight {
+    border-radius: 10px;
+    background-color: #D59292;
+}
+
+.brightness {
+    padding-left: 2rem;
+    padding-right: .8rem;
+}
+
+.lightstat {
+    font-family: Cartograph CF;
+    font-size: 22px;
+    color: #E7EFC5;
+}
+
+.brightscale trough {
+    all: unset;
+    min-height: .8rem;
+    min-width: 5rem;
+    background-color: #313645;
+    border-radius: 10px;
+}
+
+.brightscale trough highlight {
+    background-color: #E7EFC5;
+    border-radius: 10px;
+}

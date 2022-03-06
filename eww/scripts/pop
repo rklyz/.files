@@ -1,0 +1,25 @@
+#!/bin/bash
+
+timess () 
+{
+    TEMP="$HOME/.config/eww/tmp/time_temp.lock"
+    run() {
+        eww -c $HOME/.config/eww/bar update month=true
+    }
+
+    if [[ ! -f "$TEMP" ]]; then
+        touch "$TEMP"
+        run
+        echo "good"
+    else
+        rm "$TEMP"
+        eww -c $HOME/.config/eww/bar update month=false
+        echo "close"
+    fi
+}
+
+case $1 in
+    time)
+        timess
+    ;;
+esac
