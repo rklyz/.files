@@ -8,13 +8,17 @@ hc() {
 
 hc emit_hook reload
 
+# ---------- VARIABLES ----------
 EWWLOC=$HOME/eww/target/release/eww
 WALL=$HOME/.config/herbstluftwm/10.jpg
 TERMINAL=kitty
 
+# set up walls and compositor(picom)
 feh --bg-scale $WALL &
-bash ~/.config/scripts/mouseaccel.sh &
 picom --config ~/.config/picom/picom-herb.conf &
+
+# Personal Preferences
+bash ~/.config/scripts/mouseaccel.sh &
 
 # Open eww bar
 $EWWLOC -c $HOME/.config/eww/ open topbar &
