@@ -43,7 +43,7 @@
       :class "volscale")))
 
 (defpoll light :interval "1s"
-  "bash $HOME/.config/eww/scripts/brightness.sh bright")
+  "light -G")
 (defpoll lightstats :interval "1s"
   "bash $HOME/.config/eww/scripts/brightness.sh stat")
 
