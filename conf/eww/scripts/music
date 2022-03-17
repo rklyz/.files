@@ -1,0 +1,52 @@
+#!/bin/bash
+
+musicstats () {
+    if [[ $(mpc status) == *"[playing]"* ]]; then
+        echo ""
+    else
+        echo ""
+    fi
+}
+
+curtime () {
+    if [[ ! -f $HOME/.config/tmp/mpdtmp.zyx ]]; then
+        echo "0"
+    else
+        mpc status %percenttime% | sed 's/ //g' | sed 's/%//g'
+    fi
+}
+
+case $1 in
+    toggle)
+        musicstats
+    ;;
+    cur)
+        curtime
+    ;;
+    curMusic)
+        if [[ ! -f $HOME/.config/tmp/mpdtmp.zyx ]]; then
+            echo "Not Playing"
+        elif [[ $(mpc status) == *"[paused]"* ]]; then
+            echo "Paused"
+        else
+            a=$(echo "$(mpc -f %title% | head -1)")
+            if [[ $a == "" ]]; then
+                echo "-"
+            elif [[ $a == *"volume: n/a"* ]]; then
+                echo "-"
+            else
+                echo $a
+            fi
+        fi
+    ;;
+    curArtist)
+        e=$(echo $(mpc -f %artist% | head -1))
+        if [[ $e == "" ]]; then
+            echo "-"
+        elif [[ $e == *"volume: n/a"* ]]; then
+            echo "-"
+        else
+            echo $e
+        fi
+    ;;
+esac

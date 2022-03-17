@@ -1,0 +1,195 @@
+// All Widgets
+* {
+    all: unset;
+}
+
+// Set All Widgets Background
+
+.time {
+    background-color: #1d2021;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.profile, .power, .mpd, .sound, .musicIcon {
+    background-color: #282828;
+    border-radius: 10px;
+}
+
+// Time Widget
+.hour {
+    font-family: MonoLisa;
+    font-size: 40px;
+    color: #ebdbb2;
+    //margin-top: 1rem;
+}
+
+.minute {
+    font-family: MonoLisa;
+    font-size: 40px;
+    color: #ebdbb2;
+}
+
+.date {
+    font-family: Cartograph CF;
+    font-size: 20px;
+    color: #E3E1DA;
+}
+
+// Profile Widget
+.profile {
+    padding-top: .0rem;
+}
+
+.pfp {
+    background-image: url("/home/n3ko/wallpaper/giyu.jpg");
+    margin-top: 1rem;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 150px;
+    background-size: 400px;
+    background-position: 30% 0%;
+}
+
+.name {
+    font-family: Cartograph CF;
+    font-size: 30px;
+    color: #D8DBE2;
+}
+
+// Power Widget
+
+.poweroff {
+    font-size: 30px;
+    color: #DAA49A;
+}
+
+.reboot {
+    font-size: 30px;
+    color: #E5D2A7;
+}
+
+.logout {
+    font-size: 30px;
+    color: #82A1DB;
+    //background-color:#1f1d2e;
+    //border-radius: 10px;
+}
+
+// MPD Widget
+.title {
+    font-family: Cartograph CF;
+    font-size: 20px;
+    padding-top: 1.3rem;
+    color: #d3869b;
+}
+
+.artist {
+    font-family: Cartograph CF;
+    font-size: 16px;
+    padding-top: .5rem;
+    color: #ffffff;
+}
+
+// Music Icon Widget
+
+.musicIcon { font-size: 50px; color: #d3869b;
+}
+
+.prev {
+    color: #ddc7a1;
+    //background-color: #1d2021;
+    font-size: 30px;
+    padding: 0rem;
+    border-radius: 10px;
+}
+
+.toggle {
+    color: #ddc7a1;
+    //background-color: #1d2021;
+    font-size: 30px;
+    padding: .0rem;
+    border-radius: 10px;
+}
+
+.next {
+    color: #ddc7a1;
+    //background-color: #1d2021;
+    font-size: 30px;
+    padding: .0rem;
+    border-radius: 10px;
+}
+
+// Sound Widget
+.sound {
+    padding: 1rem .5rem;
+}
+
+.vol, .mic, .bri {
+    font-size: 25px;
+}
+
+.vol {
+    color: #d4be98;
+}
+
+.mic {
+    color: #d4be98;
+}
+
+.volScale trough {
+    border-radius: 10px;
+    min-width: 15rem;
+    min-height: .75rem;
+    background-color: #3c3836;
+    margin: 0px 0px 0px 1rem;
+}
+
+.volScale trough highlight {
+    background-color: #ea6962;
+    border-radius: 10px;
+}
+
+.micScale trough {
+    min-width: 15rem;
+    min-height: .75rem;
+    border-radius: 10px;
+    background-color: #3c3836;
+    margin: 0px 0px 0px 1rem;
+}
+
+.micScale trough highlight {
+    background-color: #a9b665;
+    border-radius: 10px;
+}
+
+.bri {
+    color: #d4be98;
+}
+
+.briScale trough {
+    min-width: 15rem;
+    min-height: .75rem;
+    border-radius: 10px;
+    background-color: #3c3836;
+    margin: 0px 0px 0px 1rem;
+}
+
+.briScale trough highlight {
+    background-color: #d8a657;
+    border-radius: 10px;
+}
+
+// Apps Widget
+
+.app1, .app2, .app3, .app4 {
+    border-radius: 15px;
+    padding: 0rem .25rem;
+}
+
+.app1 {
+    margin-left: 1.1rem;
+}
+
+.app4 {
+    margin-right: 1.1rem;
+}
