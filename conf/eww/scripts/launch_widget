@@ -3,7 +3,7 @@
 launch ()
 {
     eww --config $HOME/.config/eww/widgets/ daemon 2> /dev/null
-    TMP="$HOME/.config/eww/tmp/dashboard.zyx"
+    TMP="$HOME/.config/eww/scripts/dashboard.zyx"
     if [[ ! -f $TMP  ]]; then
         touch $TMP
         eww --config $HOME/.config/eww/widgets/ open-many widget time power mpd musicIcon sound
