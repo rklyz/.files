@@ -1,0 +1,106 @@
+(defpoll hour :interval "1s"
+  "date +%A' / '%k:%M")
+
+(defwidget time []
+  (box
+    :orientation "h"
+    :space-evenly "false"
+    :class "time"
+    "${hour}"))
+
+(defpoll cur_work :interval '1s' "bash $HOME/.config/eww/scripts/workspaces")
+
+(defwidget workspaces []
+  (literal  :content cur_work))
+
+(defpoll vol :interval "2s"
+  "bash $HOME/.config/eww/scripts/vol vol")
+(defpoll volstat :interval "2s"
+  "bash $HOME/.config/eww/scripts/vol stats")
+
+(defwidget volume []
+  (box 
+       :orientation "h" 
+       :space-evenly "false" 
+       :class "volume"
+       :spacing 10
+    (circular-progress  :value vol
+                        :thickness 3
+                        :clockwise 'true'
+                        :class "volscale"
+    (label
+      :text "${volstat}"
+      :class "volstat")
+    )))
+
+(defpoll light :interval "2s"
+  "light -G")
+(defpoll lightstats :interval "2s"
+  "bash $HOME/.config/eww/scripts/brightness stat")
+
+(defwidget brightness [] 
+  (box
+    :orientation "h"
+    :space-evenly "false"
+    :class "brightness"
+    :spacing 10
+    (circular-progress  :value light
+                        :thickness 3
+                        :clockwise 'true'
+                        :class "brightscale"
+    (label
+      :text "${lightstats}"
+      :class "lightstat")
+    )))
+
+(defpoll wifiStat :interval "2s" "bash $HOME/.config/eww/scripts/wifi")
+(defvar wifiToggle "bash $HOME/.config/eww/scripts/wifi toggle")
+
+(defwidget wifi []
+  (box  :orientation "h"
+        :space-evenly "false"
+        (button :onclick wifiToggle
+                :class wifiStat
+                (label  :text ""))))
+
+(defwidget right []
+  (box :orientation "h"
+       :space-evenly "false"
+       :halign "end"
+       :spacing 20
+    (volume)
+    (brightness)
+    (wifi)))
+
+(defwidget left []
+  (box :orientation "h"
+       :space-evenly "false"
+       :halign "start"
+       :valign "center"
+    (workspaces)))
+
+(defwidget center []
+  (box :orientation "h"
+       :space-evenly "false"
+       :halign "center"
+    (time)))
+
+(defwidget bar []
+  (box
+      :class "bar"
+      :orientation "h"
+      (left)
+      (center)
+      (right)))
+
+(defwindow topbar
+  :monitor 0
+  :geometry (geometry :x "0px"
+                      :y "0px"
+                      :width "80%"
+                      :height "50px"
+                      :anchor "top center") 
+  :wm-ignore false
+  :windowtype "dock"
+  :reserve (struts :distance "50px" :side "top")
+  (bar))
