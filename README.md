@@ -13,8 +13,3 @@
   * xclip
   * base-devel
   * xinput 
-  
-  ##Credits:
-  
-  - [kizu](https://github.com/janleigh/dotfiles/)
-  - [saimoomedits](https://github.com/saimoomedits/eww-widgets)
