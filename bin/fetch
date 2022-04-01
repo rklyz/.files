@@ -1,0 +1,28 @@
+#!/bin/bash
+
+wm=$(xprop -id "$(xprop -root _NET_SUPPORTING_WM_CHECK | cut -d ' ' -f 5)" | grep "_NET_WM_NAME" | cut -d '"' -f 2)
+os=$(lsb_release -sd)
+os=${os##[\"\']}
+os=${os%%[\"\']}
+SH=$(basename $SHELL)
+
+# Colors
+R=$'\e[0;31m'
+G=$'\e[0;32m'
+Y=$'\e[0;33m'
+B=$'\e[0;34m'
+P=$'\e[0;35m'
+A=$'\e[0m'
+
+tput clear
+cat << EOF
+  ( Y)  Zzz...
+  ( _ _)
+  o(")(")
+ $P$USER$A@$P$HOSTNAME
+ $R $G $Y $B $P
+
+$G OS$A > $G$os
+$Y WM$A > $Y$wm
+$R SH$A > $R$SH   
+EOF

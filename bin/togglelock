@@ -1,0 +1,26 @@
+#!/bin/bash
+
+TMP_FILE=$HOME/.cache/lock.lck
+EWW=$HOME/.local/bin/eww
+
+PSWD="1"
+
+$EWW -c $HOME/.config/eww/lock/ daemon
+
+run () {
+	i3lock -n -c 00000000 -t
+}
+
+if [[ ! -f $TMP_FILE ]]; then
+	touch $TMP_FILE
+	echo "run eww"
+        bash $HOME/.local/bin/togglebar
+	$EWW -c $HOME/.config/eww/lock/ open-many time lock
+	run
+fi
+
+rm $TMP_FILE
+echo "closing eww ;-;"
+bash $HOME/.local/bin/togglebar
+$EWW -c $HOME/.config/eww/lock/ close-all
+

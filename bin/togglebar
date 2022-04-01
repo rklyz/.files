@@ -1,0 +1,23 @@
+#!/bin/bash
+
+EWW=$HOME/.local/bin/eww
+TMP_FILE=$HOME/.cache/bar.lck
+$EWW daemon
+
+case $1 in
+	"")
+if [[ ! -f $TMP_FILE ]]; then
+     touch $TMP_FILE
+     $EWW open topbar
+else
+     rm $TMP_FILE
+     $EWW close-all
+fi
+;;
+	"open")
+if [[ ! -f $TMP_FILE ]]; then
+    touch $TMP_FILE
+fi
+$EWW open topbar
+;;
+esac

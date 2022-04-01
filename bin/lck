@@ -1,0 +1,3 @@
+#!/bin/bash
+
+i3lock -t -i $HOME/.config/herbstluftwm/Walls/tile.png
