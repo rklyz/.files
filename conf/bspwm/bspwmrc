@@ -3,7 +3,7 @@
 xsetroot -cursor_name left_ptr &
 pgrep -x sxhkd > /dev/null || sxhkd -c $HOME/.config/bspwm/sxhkdrc &
 picom --experimental-backends --config $HOME/.config/picom/picom-herb.conf &
-feh --bg-tile $HOME/.config/herbstluftwm/Walls/tile.png
+feh --bg-tile $HOME/.config/bspwm/tile.png &
 eww open topbar &
 
 bspc monitor -d 1 2 3 4 5
