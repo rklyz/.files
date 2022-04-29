@@ -2,8 +2,8 @@
   <h1 align="center"> H-Heloo! <3 </h1><br>
   <h1 align: "center"> <img src="https://github.com/N3k0Ch4n/.files/blob/main/screenshot.png"> <h1>
 </p>
-Dependencies
-  
+
+<nav>  
   * EWW
   * feh
   * pulseaudio-alsa && alsa-utils && alsa-firmware && alsa-plugins
@@ -14,3 +14,4 @@ Dependencies
   * xclip
   * base-devel
   * xinput 
+</nav>
