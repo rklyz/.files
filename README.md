@@ -3,7 +3,6 @@
   <h1 align: "center"> <img src="https://github.com/N3k0Ch4n/.files/blob/main/screenshot.png"> <h1>
 </p>
 
-<nav>  
   * EWW
   * feh
   * pulseaudio-alsa && alsa-utils && alsa-firmware && alsa-plugins
@@ -14,4 +13,3 @@
   * xclip
   * base-devel
   * xinput 
-</nav>
