@@ -1,6 +1,7 @@
-<h1> H-Heloo! <3 <h1>
-<h1 align: "center"> <img src="https://github.com/N3k0Ch4n/.files/blob/main/screenshot.png"> <h1>
-
+<p>
+  <b> H-Heloo! <3 </b><br>
+  <h1 align: "center"> <img src="https://github.com/N3k0Ch4n/.files/blob/main/screenshot.png"> <h1>
+</p>
 Dependencies
   
   * EWW
